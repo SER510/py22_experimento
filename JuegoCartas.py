@@ -2,30 +2,8 @@
 
 from Deck import Baraja
 
-class Jugador(object):
-    def __init__(self, nombre='noname') -> None:
-        self.mano = []
-        self.nombre = nombre
-
-        self.saludar()
-    
-    def coger_de_Baraja(self, Mazo, n):
-        # self.mano = Mazo.quitar_carta()
-        self.mano.append(Mazo.quitar_carta())
-
-    def saludar(self):
-        print('hola')
-
-
-class Gamer(Jugador):
-    def __init__(self, nombre) -> None:
-        # self.nombre = nombre
-
-        super().__init__(nombre)      # ejecutamos la funcion del mismo nombre de la clase "parent"
-        
-
-    def saludar(self):
-        print('hola soy ', self.nombre)
+from Players import Jugador
+from Players import Gamer
 
 class Juego(object):
     pass
@@ -50,6 +28,7 @@ class Partida(object):
 gorka   = Jugador()
 jorge   = Jugador('Jorge')
 antonio = Gamer('Antonio')
+lucas = Gamer('Lucas')
 print(antonio.mano)
 
 # print(antonio.nombre)
@@ -60,6 +39,6 @@ print(Juego.__mro__)
 
 baraja1 = Baraja("española")
 
-partida1 = Partida( [gorka, jorge], baraja1 )
+partida1 = Partida( [gorka, jorge, antonio, lucas], baraja1 )
 
 
