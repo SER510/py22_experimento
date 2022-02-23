@@ -28,7 +28,11 @@ class Partida(object):
 gorka   = Jugador()
 jorge   = Jugador('Jorge')
 antonio = Gamer('Antonio')
+<<<<<<< Updated upstream
 lucas = Gamer('Lucas')
+=======
+edgar   = Gamer('Edgar')
+>>>>>>> Stashed changes
 print(antonio.mano)
 
 # print(antonio.nombre)
