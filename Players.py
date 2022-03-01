@@ -22,3 +22,4 @@ class Gamer(Jugador):
 
     def saludar(self):
         print('hola soy ', self.nombre)
+        
