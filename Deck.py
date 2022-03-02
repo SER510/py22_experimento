@@ -19,7 +19,7 @@ class Baraja(object):
         """
         cartas_local = []
         self.turno = 0
-        self.cartas = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]   # lista
+        self.cartas = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]   # lista
         self.tipo = tipoooo             # tipo de baraja (española, francesa,...)
 
     def mezclar(self):
