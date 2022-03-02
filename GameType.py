@@ -4,6 +4,7 @@ class Partida(object):
         self.jugadores = lista_de_jugadores
         self.baraja = baraja
         # self.cartas = baraja.cartas     # esto es lo que llamamos composicion
+        print('cartas de juego',baraja.cartas)
     
     def evaluar(self):
         pass

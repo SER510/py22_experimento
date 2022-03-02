@@ -18,11 +18,16 @@ class Baraja(object):
             tipoooo (str): _description_
         """
         cartas_local = []
+        self.turno = 0
         self.cartas = [1, 2, 3, 4, 5]   # lista
         self.tipo = tipoooo             # tipo de baraja (española, francesa,...)
 
     def mezclar(self):
         shuffle(self.cartas)    # mezclamos el orden de las cartas
+        self.turno = self.turno + 1
+        print('Turno numero: ', self.turno)
+
+
     
     def quitar_carta(self):
         return self.cartas.pop()
