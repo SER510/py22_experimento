@@ -32,6 +32,10 @@ class Baraja(object):
 
     def mezclar(self):
         shuffle(self.cartas)    # mezclamos el orden de las cartas
+        self.turno = self.turno + 1
+        print('Turno numero: ', self.turno)
+
+
     
     def quitar_carta(self):
         return self.cartas.pop()
