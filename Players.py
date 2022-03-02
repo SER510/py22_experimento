@@ -10,7 +10,7 @@ class Jugador(object):
         self.mano.append(Mazo.quitar_carta())
 
     def saludar(self):
-        print('hola')
+        print('Hola')
 
 
 class Gamer(Jugador):
@@ -21,4 +21,4 @@ class Gamer(Jugador):
         
 
     def saludar(self):
-        print('hola soy ', self.nombre)
+        print('Hola soy ', self.nombre)
