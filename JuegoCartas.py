@@ -16,7 +16,6 @@ jorge   = Jugador('Jorge')
 antonio = Gamer('Antonio')
 lucas = Gamer('Lucas')
 
-
 baraja1 = Baraja("española")
 baraja1.mezclar()
 
@@ -30,10 +29,11 @@ for i in [1, 2, 3]:
     lucas.coger_de_Baraja(baraja1,1)
     i = 1+i
     #Fin del bucle
-    
+
 print('Cartas de gorka', gorka.mano)
 print('Cartas de jorge', jorge.mano)
-print('Cartas de jorge', antonio.mano)
-print('Cartas de jorge', lucas.mano)
+print('Cartas de antonio', antonio.mano)
+print('Cartas de lucas', lucas.mano)
+
 
 
