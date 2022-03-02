@@ -1,6 +1,4 @@
-from pickle import APPEND
 from random import shuffle
-from socket import NI_NUMERICHOST
 
 class Baraja(object):
     """_summary_
@@ -20,14 +18,11 @@ class Baraja(object):
             tipoooo (str): _description_
         """
         cartas_local = []
-<<<<<<< Updated upstream
-        self.cartas = [1, 2, 3, 4, 5]   # lista
-=======
+
         self.turno = 0
         self.numeros = [1, 2]   # lista
         self.numeros.extend(range(3,10))  # Extendemos la lista a 10 cartas por palo
         self.palos = ["corazon", "pica", "diamante", "trebol"]  # Creamos los palos de las cartas
->>>>>>> Stashed changes
         self.tipo = tipoooo             # tipo de baraja (española, francesa,...)
         self.cartas = []
         for n in self.numeros:
